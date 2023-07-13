@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function(){
-// Retrieve name from localStorage if it exists    
+// Get the name from localStorage if it exists    
     let name = localStorage.getItem('name');
     if (name) {
         name = document.querySelector('#name').value;
@@ -12,13 +12,13 @@ document.addEventListener('DOMContentLoaded', function(){
  // Get the entered name
         let name = document.querySelector('#name').value;
 
-// Store the name in localStorage
+// Store the name
         localStorage.setItem('name', name);
 
 // Update the greeting message
         document.querySelector('h1').innerHTML = `Hello ${name} !`;
 
-// Clear the input field
+// Clear input field
         document.querySelector('#name').value = ' ';
 
 // Call setGreeting() to update the time-based greeting
