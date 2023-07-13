@@ -1,3 +1,4 @@
+console.log(localStorage.getItem('counter'));
 if (!localStorage.getItem('counter')){
     localStorage.setItem('counter', 0);
 }
