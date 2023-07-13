@@ -5,6 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Counter</title>
     <script src="counter.js"></script>
+    <style>
+        @keyframes move {
+            0% {
+                left: 0%;
+            }
+            50% {
+                left: 98%;
+            }
+            100% {
+                left: 0%;
+            }
+        }
+        h1 {
+            font-size: 50px;
+            color: #ff0000;
+            position: relative;
+            animation-name: move;
+            animation-duration: 5s;
+            animation-fill-mode: forwards;
+            animation-iteration-count: infinite;
+        }
+    </style>
 </head>
 <body>
     <h1>0</h1>
